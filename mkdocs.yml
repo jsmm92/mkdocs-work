@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+site_name: staticwebmkdocs
+site_url: https://mydomain.org/mysite
+theme: 
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs.sticky
+    - navigation.tabs
+    ## - navigation.tabs
+    - navigation.instant.progress
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - toc.follow
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - announce.dismiss
+    - navigation.footer
+    - content.tabs.link
+    - content.code.copy
+    ## - header.autohide
+    ## - navigation.instant.preview
+  language: en
+  icon:
+    logo: material/library-outline
+       
+  palette:
+
+   # Palette toggle for light mode
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: teal    
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+extra:
+  homepage: http://127.0.0.1:8000/ ##https://mydomain.org/mysite   
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://github.com/.../issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: ""
+    - icon: fontawesome/brands/twitter
+      link: ""   
+copyright: Copyright &copy; 2024 Jsmartinez
+      
+##plugins:
+  ##- search:
+    ##lang: es
