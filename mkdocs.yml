@@ -1,42 +1,59 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-site_name: staticwebmkdocs
+# Informacion del sitio
+site_name: Azure Documnetacion FFDS Tenant
 site_url: https://mydomain.org/mysite
+site_author: Jsmartinez
+site_description: >-
+  Sitio de prueba estatico que contiene documentacion referente a la gestion y gobernanza del tenant del FFDS.
+
+# Repositorio
+## repo_name: jsmm92/mkdocs-work
+##repo_url: https://github.com/jsmm92/mkdocs-work.git
+
+#copyright
+copyright: Copyright &copy; 2024 JSMartinez
+
+#Extensions
+
+#Configuration
 theme: 
   name: material
+  ##custom_dir: overrides
   features:
-    - navigation.instant
+    - announce.dismiss
+    - content.tabs.link
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
+    - content.tooltips
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+   ## - navigation.instant
+    - navigation.sections
     - navigation.tabs.sticky
     - navigation.tabs
-    ## - navigation.tabs
+    - navigation.top
     - navigation.instant.progress
     - navigation.instant.prefetch
     - navigation.tracking
-    - navigation.sections
-    - navigation.expand
     - navigation.path
-    - navigation.indexes
-    - toc.follow
-    - toc.integrate
-    - navigation.top
+  ## - toc.follow
+  ## - toc.integrate
     - search.suggest
     - search.highlight
-    - search.share
-    - announce.dismiss
-    - navigation.footer
-    - content.tabs.link
-    - content.code.copy
-    ## - header.autohide
-    ## - navigation.instant.preview
+    - search.share  
+  ## - header.autohide
+  ## - navigation.instant.preview
   language: en
   icon:
     logo: material/library-outline
-       
+     
   palette:
-
    # Palette toggle for light mode
     - scheme: default
-      primary: indigo
-      accent: deep purple
+      primary: teal
+      accent: teal
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
@@ -48,6 +65,26 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+ ## font:
+   ## text: Ubuntu
+   ## code: Ubuntu Mono
+  ## favicon: luc.png
+  ## logo: luc.png
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+        
+# Customization
 extra:
   homepage: http://127.0.0.1:8000/ ##https://mydomain.org/mysite   
   analytics:
@@ -74,8 +111,39 @@ extra:
       link: ""
     - icon: fontawesome/brands/twitter
       link: ""   
-copyright: Copyright &copy; 2024 Jsmartinez
-      
-##plugins:
-  ##- search:
-    ##lang: es
+
+# Page Tree
+nav:
+  - Inicio: 
+    - index.md
+    - Arquitectura:
+      - 1 - Arquitectura modelo Hub And Spoke Azure SDS: arquitectura.md
+      - 2 - Management Group, Tenant Root Group y Suscripciones: suscripciones.md
+      - 3 - Arquitectura de Red: network.md
+    - Gestion de Identidad:
+      - 4 - Seguridad Control de Acceso y Gestión de Identidades RBAC: identidad.md
+    - Recursos:
+      - 5 - Aplicaciones y servicios desplegados en el portal de Azure FFDS: aplicaciones.md
+      - 6 - Depuración de Recursos: depuracion.md
+    - Billing:
+      - 7 - Facturación y Costos: facturacion.md
+    - Monitor:
+      - 8 - Monitoreo y Registro de actividades e Incidentes: monitoreo.md
+    - Gestion de Backup:
+      - 9 - Backup y Recuperación de Datos: backup.md
+    - Documentacion y herramientas:
+      - 10 - Herramientas y Mejores Prácticas: herramientas.md
+    
+      - Day 10 - Scheduling tasks: 10.md
+      - Day 11 - Finding things: 11.md
+      - Day 12 - Transferring files: 12.md
+      - Day 13 - Users and Groups: 13.md
+      - Day 14 - Who has permission?: 14.md
+      - Day 15 - Deeper into repositories: 15.md
+      - Day 16 - Archiving and compressing: 16.md
+      - Day 17 - Build from the source: 17.md
+      - Day 18 - Log rotation: 18.md
+      - Day 19 - Inodes, symlinks and other shortcuts: 19.md
+      - Day 20 - Scripting: 20.md
+    - What Now?:
+      - Day 21 - What's next?: 21.md

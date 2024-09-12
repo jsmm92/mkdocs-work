@@ -98,6 +98,7 @@ Acontiunacion puede visualizar el framework [Well architected framework](https:/
 ## Redis Cache
 ## Azure Firewall Manager
 ## Azure Cognitive Search
+
 - Azure Database for PostgreSQL
 - Container Registry
 - Virtual Network

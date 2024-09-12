@@ -1,36 +1,22 @@
-# inicio
+# Inicio
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Documentación General y Detalle Técnico Azure Portal FFDS 2024.
 
-## Commands
+Este documento está diseñado para proporcionar una guía integral sobre la configuración, operación y mantenimiento del portal de Azure implementado para el FFDS 2024. Aquí encontrará información técnica y general de las capacidades de la plataforma.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+El objetivo principal de esta documentación es facilitar la comprensión de las funcionalidades como la arquitectura técnica, y los flujos de trabajo asociados con el portal, proporcionando una referencia centralizada para cualquier interesado en la infraestructura de Azure portal para el FFDS 2024.
 
-## Project layout
+A continuación, se describen los módulos principales y los detalles técnicos sobre la implementación y operacion de diferentes servicios implementados en Azure:
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Secciones
 
-
- some code example `asdasd code examples jkasdjhaskjdhakjsehkqwjhbe` asdasdas2024.
-
-## code block:
-
-```
-snapshot = 63 * 59;
-address_file_expression.retina.type(file_row.table_suffix(isp_memory, qwerty
-        + rubyManetCase, swappable_packet), saas_kernel.lion(executableHdtv(
-        20, zebibyte)), 4);
-link.server_tweet = dsl_mountain;
-```
-
-## Icons:
-
-:smile:
-
-:fontawesome-regular-face-laugh-wink:
+1. [Arquitectura modelo Hub And Spoke Azure SDS](arquitectura.md)
+2. [Management Group, Tenant Root Group y Suscripciones](suscripciones.md)
+3. [Arquitectura de Red](network.md)
+4. [Seguridad Control de Acceso y Gestión de Identidades RBAC](identidad.md)
+5. [Aplicaciones y servicios desplegados en el portal de Azure FFDS](aplicaciones.md)
+6. [Depuración de Recursos](depuracion.md)
+7. [Facturación y Costos](facturacion.md)
+8. [Monitoreo y Registro de actividades e Incidentes](monitoreo.md)
+9. [Backup y Recuperación de Datos](backup.md)
+10. [Herramientas y Mejores Prácticas](herramientas.md)

@@ -25,6 +25,25 @@ Acontiunacion puede visualizar el framework [Well architected framework](https:/
 | Producto A   | $10.00  |
 | Producto B   | $20.00  |
 
+# Servicios Involucrados en la Arquitectura
+
+## 1. Azure App Service
+El **App Service** en Azure proporciona un entorno de alojamiento completamente administrado para aplicaciones web, APIs y backends móviles. Es compatible con .NET, Java, Python, y más.
+
+**Características**:
+- Autoescalado para manejar la demanda.
+- Integración con DevOps para implementaciones continuas.
+- Certificados SSL/TLS gratuitos.
+
+## 2. Azure SQL Database
+Es una base de datos como servicio completamente administrada que soporta hasta 99.99% de disponibilidad. Incluye características como recuperación ante desastres y respaldo automático.
+
+## 3. Azure Blob Storage
+Permite el almacenamiento de archivos no estructurados como imágenes, videos y archivos de texto en la nube, ofreciendo opciones de acceso mediante HTTP/HTTPS.
+
+...
+
+Cada servicio está configurado para cumplir con los requisitos de disponibilidad, escalabilidad y seguridad de la aplicación.
 
 ## Fondo Financiero Distrital de Salud main Azure resources
 

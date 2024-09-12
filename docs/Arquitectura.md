@@ -1,9 +1,41 @@
-# Arquitectura
+# Arquitectura Azure SDS
 
-### Test webappstaticmkdocs
+### Topología Modelo Hub and Spoke Azure SDS
 
-Lorem markdownum flumina corporibus ademptis postquam voluptas ut et ego adest
-rupit inter Nixique quod sit, ipsa. Numina se te eversam temptat telorum media
+Para la SDS se diseñó y se implementó una topología de red y seguridad llamado Hub and Spoke tomado del CAF (Cloud Adoption Framework) 
+de la nube de Azure, lo que permite trabajar de manera flexible y segura la implementación de aplicaciones y recursos.
+Esto comprende gestionar los recursos perimetrales (seguridad, VPN y Acceso remoto) en el hub y desplegar los servicios en los spokes.
+
+[Fuente Documentacion Microsoft Azure Hub and Spoke](https://learn.microsoft.com/es-es/azure/architecture/networking/architecture/hub-spoke?tabs=cli)
+
+Para lo cual Acontinuación se muestra el diagrama implementado en la nube Azure de la SDS, tanto para los recursos de los ambiente producción como para desarrollo.
+
+#### Topologia Hub And Spoke Ambiente Producción:
+
+![Topologia Hub And Spoke Ambiente Prod](imagenes/hubandspokeprod.png)
+
+#### Topologia Hub And Spoke Ambiente Dev:
+
+![Topologia Hub And Spoke Ambiente Dev](imagenes/hubandspokedev.png)
+
+# Descripción General de la Arquitectura Web en Azure
+
+La arquitectura web presentada utiliza varios servicios de Azure para proporcionar una solución escalable, segura y de alta disponibilidad. A continuación se muestra una descripción de los componentes clave.
+
+## Componentes Clave:
+
+1. **Azure App Service**: Aloja la aplicación web y permite una fácil escalabilidad.
+2. **Azure SQL Database**: Proporciona una base de datos relacional en la nube.
+3. **Azure Blob Storage**: Almacena archivos estáticos y contenido multimedia.
+4. **Azure Traffic Manager**: Dirige el tráfico entre múltiples regiones para garantizar alta disponibilidad.
+5. **Azure Application Gateway**: Actúa como balanceador de carga y firewall de aplicaciones web (WAF).
+6. **Azure Virtual Network (VNet)**: Proporciona una red segura para conectar los servicios.
+7. **Azure Key Vault**: Gestiona los secretos, claves y certificados de la aplicación.
+
+Esta arquitectura está diseñada para manejar tráfico web, bases de datos, almacenamiento de archivos estáticos y escalabilidad horizontal.
+
+![Diagrama de Arquitectura](images/diagrama-arquitectura.png)
+
 placebant tamen ingemuitque inde. Aethalion solacia.
 
 1. Despectus subit
