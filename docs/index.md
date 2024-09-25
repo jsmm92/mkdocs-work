@@ -20,3 +20,4 @@ A continuación, se describen los módulos principales y los detalles técnicos 
 8. [Monitoreo y Registro de actividades e Incidentes](monitoreo.md)
 9. [Backup y Recuperación de Datos](backup.md)
 10. [Herramientas y Mejores Prácticas](herramientas.md)
+11. [Acerca de](about.md)

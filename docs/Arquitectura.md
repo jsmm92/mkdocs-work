@@ -6,15 +6,15 @@ Para la SDS se diseñó y se implementó una topología de red y seguridad llama
 de la nube de Azure, lo que permite trabajar de manera flexible y segura la implementación de aplicaciones y recursos.
 Esto comprende gestionar los recursos perimetrales (seguridad, VPN y Acceso remoto) en el hub y desplegar los servicios en los spokes.
 
-[Fuente Documentacion Microsoft Azure Hub and Spoke](https://learn.microsoft.com/es-es/azure/architecture/networking/architecture/hub-spoke?tabs=cli)
+[Fuente Documentacion Microsoft Azure Hub and Spoke](https://learn.microsoft.com/es-es/azure/architecture/networking/architecture/hub-spoke?tabs=cli){:target="_blank"}
 
-Para lo cual Acontinuación se muestra el diagrama implementado en la nube Azure de la SDS, tanto para los recursos de los ambiente producción como para desarrollo.
+Acontinuación se visualiza el diagrama implementado en la nube Azure de la SDS, tanto para los recursos de los ambiente producción como para desarrollo.
 
-#### Topologia Hub And Spoke Ambiente Producción:
+#### Topología Hub And Spoke Ambiente Producción:
 
 ![Topologia Hub And Spoke Ambiente Prod](imagenes/hubandspokeprod.png)
 
-#### Topologia Hub And Spoke Ambiente Dev:
+#### Topología Hub And Spoke Ambiente Dev:
 
 ![Topologia Hub And Spoke Ambiente Dev](imagenes/hubandspokedev.png)
 

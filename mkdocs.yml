@@ -31,8 +31,8 @@ theme:
     - navigation.indexes
    ## - navigation.instant
     - navigation.sections
-    - navigation.tabs.sticky
-    - navigation.tabs
+  ##  - navigation.tabs.sticky
+  ##  - navigation.tabs
     - navigation.top
     - navigation.instant.progress
     - navigation.instant.prefetch
@@ -53,7 +53,7 @@ theme:
    # Palette toggle for light mode
     - scheme: default
       primary: teal
-      accent: teal
+      accent: light blue
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
@@ -83,6 +83,7 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - attr_list
         
 # Customization
 extra:
@@ -111,7 +112,8 @@ extra:
       link: ""
     - icon: fontawesome/brands/twitter
       link: ""   
-
+#extra_css:
+ # - stylesheets/extra.css
 # Page Tree
 nav:
   - Inicio: 
