@@ -2,21 +2,35 @@
 
 ### Topología Modelo Hub and Spoke Azure SDS
 
-Para la SDS se diseñó y se implementó una topología de red y seguridad llamado Hub and Spoke tomado del CAF (Cloud Adoption Framework) 
-de la nube de Azure, lo que permite trabajar de manera flexible y segura la implementación de aplicaciones y recursos.
-Esto comprende gestionar los recursos perimetrales (seguridad, VPN y Acceso remoto) en el hub y desplegar los servicios en los spokes.
+Para la SDS, se diseñó e implementó una topología de red y seguridad basada en el modelo Hub and Spoke, siguiendo las recomendaciones del Cloud Adoption Framework (CAF) de Azure. Esta topología permite trabajar de manera flexible y segura en la implementación de aplicaciones y recursos. El diseño comprende la gestión de los recursos perimetrales (seguridad, VPN y acceso remoto) en el hub, mientras que los servicios se despliegan en los spokes.
 
 [Fuente Documentacion Microsoft Azure Hub and Spoke](https://learn.microsoft.com/es-es/azure/architecture/networking/architecture/hub-spoke?tabs=cli){:target="_blank"}
 
-Acontinuación se visualiza el diagrama implementado en la nube Azure de la SDS, tanto para los recursos de los ambiente producción como para desarrollo.
+Acontinuación se muestra el diagrama implementado en la nube Azure de la SDS, tanto para los recursos de los ambiente producción como para desarrollo.
 
-#### Topología Hub And Spoke Ambiente Producción:
+## Topología Hub And Spoke Ambiente Producción:
 
 ![Topologia Hub And Spoke Ambiente Prod](imagenes/hubandspokeprod.png)
 
-#### Topología Hub And Spoke Ambiente Dev:
+### Caracteristicas de este modelo para ambiente productivo
+
+- [x] Se cuenta con una Vnet Hub y VPN Gateway el cual permite la conectividad de servicios desde onpremise hacia la Nube y visceversa.
+- [x] Esta presente el emparejamiento de redes para la conectividad mediante vnets, subnets y suscripciones dosponibles.
+- [x] Se implemento el servicio de Azure Firewall para filtrar el trafico y proteger la red interna del hub.
+- [x] Se cuenta con un recurso de Azure Bastion para conectividad a VMs evitando exposicion directa a internet.
+- [x] Se implemento el servicio de Azure Front Door para enrutar el trafico mejorando la disponibilidad y seguridad mediante el WAF que ofrece.
+
+## Topología Hub And Spoke Ambiente Dev:
 
 ![Topologia Hub And Spoke Ambiente Dev](imagenes/hubandspokedev.png)
+
+### Caracteristicas de este modelo para ambiente Dev Test
+
+- [x] Se cuenta con una Vnet Hub y VPN Gateway el cual permite la conectividad de servicios desde onpremise hacia la Nube y visceversa.
+- [x] Esta presente el emparejamiento de redes para la conectividad mediante vnets, subnets y suscripciones dosponibles.
+- [x] Se implemento el servicio de Azure Firewall para filtrar el trafico y proteger la red interna del hub.
+- [x] Se cuenta con un recurso de Azure Bastion para conectividad a VMs evitando exposicion directa a internet.
+- [x] Se implemento el servicio de Azure Front Door para enrutar el trafico mejorando la disponibilidad y seguridad mediante el WAF que ofrece.
 
 # Descripción General de la Arquitectura Web en Azure
 
@@ -31,54 +45,3 @@ La arquitectura web presentada utiliza varios servicios de Azure para proporcion
 5. **Azure Application Gateway**: Actúa como balanceador de carga y firewall de aplicaciones web (WAF).
 6. **Azure Virtual Network (VNet)**: Proporciona una red segura para conectar los servicios.
 7. **Azure Key Vault**: Gestiona los secretos, claves y certificados de la aplicación.
-
-Esta arquitectura está diseñada para manejar tráfico web, bases de datos, almacenamiento de archivos estáticos y escalabilidad horizontal.
-
-![Diagrama de Arquitectura](images/diagrama-arquitectura.png)
-
-placebant tamen ingemuitque inde. Aethalion solacia.
-
-1. Despectus subit
-2. Quam rurigenae auro necetur et oculis parantem
-3. Columbae huc habebis fuit sine nuper plausis
-4. Hominemque vestigia pendeat
-
-Barbarus non dum fortuna, Agyrtes, hausimus **dum gravidae missum** sarisa
-clauditur, istis. Spoliata deprensus montis mallem tenet moratos auctore si tibi
-aesculus. Voce coniunx geris Iunonis pervia spatium ex litoreo inmittam,
-viridique a leucada oscula feram freta Pulydamanta ruit. Cubitoque potuit
-conplectens liceat obstabatque Threicio caelo. Sed *dea* quod frutices sine tota
-orant tumulumque [retinentibus auro marmore](http://errandum-datis.io/) utque ab
-concrevit *deorum*?
-
-    snapshot = 63 * 59;
-    address_file_expression.retina.type(file_row.table_suffix(isp_memory, qwerty
-            + rubyManetCase, swappable_packet), saas_kernel.lion(executableHdtv(
-            20, zebibyte)), 4);
-    link.server_tweet = dsl_mountain;
-
-## Oculosque subnixa hospitio nam nubibus procul gyrum
-
-Virus mihi sonus maxime sola urbem fugerat relinque nequeat ad facit videt
-suscipiunt paludibus arte diva cepimus duro hydrae. Tumulis hoste sapiens.
-
-De erat! *Ullo ruit* invenit, pectore alium. Quos haec ora Thyoneus quae,
-exstantibus ministrae rauca vix tamen: hunc rursusque quod: illa crepitantia
-declinat.
-
-## ASDASDASD2234IJ23I4UHJ234
-
-1. Sonanti voracis mixtum negabit reddite per postquam
-2. Pugnat simul studiosius ille
-3. Orion prohibente esset
-4. Florent saepe poscit studiis adflatuque
-5. Fert nondum rerumque protinus dum signis putat
-
-Per et modo et dixit mihi pedesque blanda, ferro feret tempora. Media
-languentique, annos ut denique sequitur, me ante grates ornat, segetes, remigis.
-Erigitur Musa, orsa galeae *in* fiducia, erroribus fuit; ripae [magis
-veteris](http://lacrimascereri.com/)! Serpit et nec pericula naturae adspicit,
-in nec et, et. Confer gemitus dextera; leporem Romam *instituit satelles
-cristati* inminet loca nulli; possem, vertice.
-
-Praesentia dedit: est mundi manus habebat diversaque atque. Erat socios.

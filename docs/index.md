@@ -1,12 +1,14 @@
 # Inicio
 
-## Documentación General y Detalle Técnico Azure Portal FFDS 2024.
+## Documentación General y Detalle Técnico Azure Portal FFDS 2024. 
 
 Este documento está diseñado para proporcionar una guía integral sobre la configuración, operación y mantenimiento del portal de Azure implementado para el FFDS 2024. Aquí encontrará información técnica y general de las capacidades de la plataforma.
 
 El objetivo principal de esta documentación es facilitar la comprensión de las funcionalidades como la arquitectura técnica, y los flujos de trabajo asociados con el portal, proporcionando una referencia centralizada para cualquier interesado en la infraestructura de Azure portal para el FFDS 2024.
 
-A continuación, se describen los módulos principales y los detalles técnicos sobre la implementación y operacion de diferentes servicios implementados en Azure:
+!!! Note "Nota"
+
+    A continuación, se describen los módulos principales y los detalles técnicos sobre la implementación y operacion de diferentes servicios implementados en Azure:
 
 ## Secciones
 
@@ -21,3 +23,50 @@ A continuación, se describen los módulos principales y los detalles técnicos 
 9. [Backup y Recuperación de Datos](backup.md)
 10. [Herramientas y Mejores Prácticas](herramientas.md)
 11. [Acerca de](about.md)
+
+
+!!! note "Esto es un titulo de ejemplo"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+??? note "Esto es un titulo de ejemplo"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+???+ asd
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+          
+
+!!! warning "Esto es un titulo de ejemplo"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+                        
+!!! Tip "Esto es un titulo de ejemplo"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+!!! Danger "Esto es un titulo de ejemplo"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa..
+
+!!! Bug "Esto es un titulo de ejemplo"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+
+:cloud_with_rain:
